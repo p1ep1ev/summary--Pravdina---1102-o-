@@ -1,17 +1,16 @@
-
 @font-face {
     font-family: "Montserrat";
-    src: url(/fonts/static/Montserrat-Regular.ttf);
+    src: url(/summary--surname---group-number/fonts/Montserrat-Regular.ttf);
 }
 
 @font-face {
     font-family: "Roboto";
-    src: url(/fonts/Roboto-Regular.ttf);
+    src: url(/summary--surname---group-number/fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
     font-family: "Roboto Mono";
-    src: url(/fonts/static/RobotoMono-Regular.ttf);
+    src: url(/summary--surname---group-number/fonts/RobotoMono-Regular.ttf);
 
 }
 @font-face {
@@ -20,17 +19,20 @@
 }
 
 body {
-margin: 0;
-font-size: 18px;
-font-weight: 400px;
-line-height: 1.5;
-color: #212529;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400px;
+    line-height: 1.5;
+    color: #212529;
+    font-family: "Roboto";
+    margin-bottom: 100px;
 }
 
 header {
-font-family: "Roboto";
-src: url(/fonts/Roboto-Regular.ttf);
-font-size: 0.8;
+    font-family: "Roboto";
+    src: url(/fonts/Roboto-Regular.ttf);
+    font-size: 0.8;
+    text-align: center;
 }
 
 body > h1 {
@@ -45,39 +47,73 @@ body > h2 {
     padding: 6px 10px;
 }
 
+.conspect {
+    text-align: center;
+}
+
+.mainname {
+    text-align: center;
+}
+
+
 a {
     text-decoration: none;
 }
+
 main {
-    height: 1640px;
-    width: 1180px;
+    width: 1640px;
+    height: 1180px;
     /*  Блоки размещены в 3 колонки; */
     column-count: 3;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+    flex-direction: row;
 }
    
 
 div {
+    font-family: "Monsterrat" ;
+    font-size: 1;
+    background-image: repeating-linear-gradient(#FF0000, #009999, #9FEE00);
+    border-radius: 24px;
+    height: 580px;
+    width: 530px;
+    margin-left: 5px;  
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: space-evenly;
-  font-family: "Roboto";
-  src: url(/fonts/Roboto-Regular.ttf);
-  font-size: 1;
-  background:linear-gradient(green, blue, red, orange);
-  
+    flex-direction: column;
+    align-items: center;
 }
 
+div a:hover{
+    color:black;
+}
+
+
+div:hover{
+    box-shadow: 0px -5px 10px 0px black;
+}
+
+p {
+    font-weight: normal;
+    inline-size: 1.7;
+
+}
+
+article {
+    margin: 16px 0;
+}
 
 
 
 
 footer a {
     text-decoration: none;
-    color: black;
+    color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding-bottom: 10px;
 }
 
 footer {
