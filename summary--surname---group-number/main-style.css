@@ -58,6 +58,7 @@ body > h2 {
 
 a {
     text-decoration: none;
+    color: whitesmoke;
 }
 
 main {
@@ -75,7 +76,7 @@ main {
 div {
     font-family: "Monsterrat" ;
     font-size: 1;
-    background-image: repeating-linear-gradient(#FF0000, #009999, #9FEE00);
+    background-image: repeating-linear-gradient(rgba(103, 0, 31, .8), rgba(34, 101, 163, .5));
     border-radius: 24px;
     height: 580px;
     width: 530px;
@@ -100,11 +101,67 @@ p {
 
 }
 
-article {
-    margin: 16px 0;
+button {
+    background-color: rgb(12, 80, 206);
+    font-size: 25px;
+    border-color: 1px solid #93e9ff;
+    border-radius: 0 25px 25px 0 ;
+    text-align: center;
+}
+button:hover {
+    background-color: rgb(122, 122, 248);
 }
 
+section {
+    margin: 16px 0;
+    background-image:linear-gradient(to top left, powderblue, pink)
+}
 
+ol.list {
+    list-style: none;
+    counter-reset: li;
+ }
+ li.quest:before {
+    counter-increment: li;
+    content: counters(li, ".") ".";
+ }
+
+ li {
+    line-height: 35px;
+ }
+
+.command {
+    color: #24292E;
+}
+
+.argument {
+    color: #07e4e4;
+}
+
+.comment {
+    color: #c9c9a5;
+}
+
+span {
+    background-color: #6d757d;
+    padding: 16px;
+    margin: 0 0 16px 0;
+    font-family: "SFMono";
+    font-size: 0.85em;
+}
+
+.f_word {
+    background-color: #a3c9f5;
+    padding: 11px;
+    font-size: 18px;
+}
+
+h2.howtoo {
+    display: flex;
+    position: relative;
+    left: 150px;
+    background-color: #93e9ff;
+}
 
 
 footer a {
@@ -120,7 +177,7 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
-    background-color: #333;
+    background-color: #333333d0;
     color: #FFF; 
     font-size: 0.7em;
     text-align: right;
