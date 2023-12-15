@@ -71,9 +71,15 @@ main {
     justify-content:space-evenly;
     flex-direction: row;
 }
+
+img {
+    position: relative;
+    top: 10px;
+}
+
    
 
-div {
+article.html {
     font-family: "Monsterrat" ;
     font-size: 1;
     background-image: repeating-linear-gradient(rgba(103, 0, 31, .8), rgba(34, 101, 163, .5));
@@ -86,12 +92,64 @@ div {
     align-items: center;
 }
 
-div a:hover{
+article.js {
+    font-family: "Monsterrat" ;
+    font-size: 1;
+    background-image: repeating-linear-gradient(rgba(103, 0, 31, .8), rgba(34, 101, 163, .5));
+    border-radius: 24px;
+    height: 580px;
+    width: 530px;
+    margin-left: 5px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article.css {
+    font-family: "Monsterrat" ;
+    font-size: 1;
+    background-image: repeating-linear-gradient(rgba(103, 0, 31, .8), rgba(34, 101, 163, .5));
+    border-radius: 24px;
+    height: 580px;
+    width: 530px;
+    margin-left: 5px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article.linux {
+    font-family: "Monsterrat" ;
+    font-size: 1;
+    background-image: repeating-linear-gradient(rgba(103, 0, 31, .8), rgba(34, 101, 163, .5));
+    border-radius: 24px;
+    height: 580px;
+    width: 530px;
+    margin-left: 5px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article.github {
+    font-family: "Monsterrat" ;
+    font-size: 1;
+    background-image: repeating-linear-gradient(rgba(103, 0, 31, .8), rgba(34, 101, 163, .5));
+    border-radius: 24px;
+    height: 580px;
+    width: 530px;
+    margin-left: 5px;  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article a:hover{
     color:black;
 }
 
 
-div:hover{
+article:hover{
     box-shadow: 0px -5px 10px 0px black;
 }
 
@@ -102,11 +160,12 @@ p {
 }
 
 button {
-    background-color: rgb(12, 80, 206);
+    background-color: rgb(44, 153, 153);
     font-size: 25px;
     border-color: 1px solid #93e9ff;
     border-radius: 0 25px 25px 0 ;
     text-align: center;
+    margin-top: 15px;
 }
 button:hover {
     background-color: rgb(122, 122, 248);
